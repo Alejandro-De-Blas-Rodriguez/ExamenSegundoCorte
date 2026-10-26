@@ -47,8 +47,6 @@ public class ExamenSegundoCorte {
         int cuantos = sc.nextInt();
         for (int i = 1; i <= cuantos; i ++){
             System.out.println("Alumno " + i);
-            System.out.print("Nombre : ");
-            String nombre = sc.nextLine();
             System.out.print("Evaluacion 1 : ");
             double evaluacion1 = sc.nextDouble();
             System.out.print("Evaluacion 2 : ");
