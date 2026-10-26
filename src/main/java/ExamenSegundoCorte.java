@@ -38,8 +38,36 @@ public class ExamenSegundoCorte {
         System.out.println("Modoficar estadisticas");
     }
 
-    private static void registrarCalificaciones() {
-        System.out.println("Registar calificaciones");
+    private static void registrarCalificaciones( ) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("=====================================");
+        System.out.println("REGISTRAR ESTUDIANTE");
+        System.out.println("=====================================");
+        System.out.println("Cauntos estifiantes registrara");
+        int cuantos = sc.nextInt();
+        for (int i = 1; i <= cuantos; i ++){
+            System.out.println("Alumno " + i);
+            System.out.print("Nombre : ");
+            String nombre = sc.nextLine();
+            System.out.print("Evaluacion 1 : ");
+            double evaluacion1 = sc.nextDouble();
+            System.out.print("Evaluacion 2 : ");
+            double evaluacion2 = sc.nextDouble();
+            System.out.print("Evaluacion 3 : ");
+            double evaluacion3 = sc.nextDouble();
+            double promedio = (evaluacion1 + evaluacion2 + evaluacion3 )/3;
+            System.out.println("Su promedio es "+ promedio);
+            if (promedio >= 6 ){
+                System.out.println("Aprobado");
+            }
+            else
+                System.out.println("reprobado");
+
+
+
+
+        }
+
     }
 
 }
