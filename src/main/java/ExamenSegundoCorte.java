@@ -12,7 +12,7 @@ public class ExamenSegundoCorte {
                     registrarCalificaciones();
                     break;
                 case 2:
-                    modificarEstadisticas();
+                    //modificarEstadisticas();
                     break;
                 case 3:
                     System.out.println("Saliendo del programa");
@@ -34,8 +34,14 @@ public class ExamenSegundoCorte {
         System.out.println("Seleccione una opción:");
     }
 
-    private static void modificarEstadisticas() {
-        System.out.println("Modoficar estadisticas");
+    private static void modificarEstadisticas(int reprobados, int aprobados, int i, double promedio) {
+        double promediogenreal = (promedio / i );
+        System.out.println("Estadisticas del grupo ");
+        System.out.println("Estidantes registrados "+ i);
+        System.out.println("Estidantes aprobados "+ i);
+        System.out.println("Estidantes reprobados  "+ i);
+        System.out.println("promedio general  " + promediogenreal);
+return;
     }
 
     private static void registrarCalificaciones( ) {
@@ -43,7 +49,7 @@ public class ExamenSegundoCorte {
         System.out.println("=====================================");
         System.out.println("REGISTRAR ESTUDIANTE");
         System.out.println("=====================================");
-        System.out.println("Cauntos estifiantes registrara");
+        System.out.println("Cauntos estidiantes registrara");
         int cuantos = sc.nextInt();
         for (int i = 1; i <= cuantos; i ++){
             System.out.println("Alumno " + i);
